@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 用sort()排序
+      var arr = [2, 6, 1, 77, 52, 25, 7, 99];
+      let arr1 = arr.sort((a, b) => {
+        return a - b; //a-b 是升序 1-99
+        // return  b-a //b-a 是降序99-1
+      });
+      console.log(arr1); //数组排序
+      // console.log(arr[7]);//数组最大值
+
+      //冒泡排序
+      function fn(arr) {
+        for (let i = 0; i < arr.length - 1; i++) {
+          for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+              let temp = arr[j];
+              arr[J] = arr[j + 1];
+              arr[j + 1] = temp;
+            }
+          }
+        }
+        return arr
+      }
+      console.log(fn(arr));
+    </script>
+  </body>
+</html>

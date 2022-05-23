@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [2, 6, 1, 77, 52, 25, 7, 99];
+      function fn(arr) {
+        let arr1 = [];
+        for (let i = arr.length; i >= 0; i--) {
+          arr1.push(arr[i]);
+        }
+        return arr1
+      }
+      console.log(fn(arr));
+      //数组犯方法
+      let arr2 = arr.reverse()
+      console.log(arr2);
+    </script>
+  </body>
+</html>
